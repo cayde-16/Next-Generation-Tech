@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="index.css">
     <title>NextGen | Tech</title>
     <script src="https://kit.fontawesome.com/92dedf69fe.js" crossorigin="anonymous" ></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -16,7 +18,7 @@
         <div class="navbar-container">
             <a href="/" id="navbar__logo">
                 <i class="fa fa-diamond" style="margin-right:10px;"></i>
-                NEXT
+                <p>NEXT</p>
             </a>
             <div id="mobile-menu" class="navbar__toggle">
                 <span class="bar"></span>
@@ -61,11 +63,15 @@
                     <h1>NEXT GENERATION</h1>
                     <h2>TECHNOLOGY</h2>
                     <p>See what makes up different</p>
-                    <button class="main__button">Get Started</button>
+                    <button class="main__button">
+                        <a href="/">
+                            Get Started
+                        </a>
+                    </button>
                 </div>
 
-                <div class="hero__image">
-                    <img src="./images/pic1.svg" alt="">
+                <div class="hero__image_container">
+                    <img id="hero__image" src="./images/pic1.svg" alt="">
                 </div>
            </div>
         </section>
