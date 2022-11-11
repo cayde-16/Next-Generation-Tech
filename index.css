@@ -9,6 +9,10 @@
     --max-width: 1300px;
     --background: #131313;
 }
+
+body{
+    background-color: var(--background);
+}
 /* start navbar */
 .navbar{
     background:var(--background);
@@ -333,6 +337,7 @@
     height: 80%;
     width: 80%;
 }
+
 /* mobile responsive */
 @media screen and (max-width:768px) {
     .main__container{
@@ -389,3 +394,115 @@
 }
 /* end of mobile responsive */
 /* end of hero section */
+
+
+/* services section */
+.service__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #141414;
+    height: 100vh;
+    
+}
+
+.service__heading{
+    text-align: center;
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #ff8177 0%, 
+        #ff867A 0%, #ff8c7F 21%, #f99185 52%, #cf556c 78%, #b12A5B 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service__card{
+    background: white;
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/pic3.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.service__card:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url('./images/pic4.jpg');
+}
+
+.services h1{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+
+.service__card p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.service__card button{
+    color: white;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    border: none;
+    position: absolute;
+    top: 430px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.service__card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width:960px) {
+    .service__container{
+        height: 1600px;
+    }
+
+    .service__container .service__heading{
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .service__container{
+        height: 1400px;
+    }
+
+    .service__container .service__heading{
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+
+    .services h1{
+        font-size: 1.2rem;
+    }
+
+    .service__card{
+        width: 300px;
+    }
+}
+/* end of services section */
